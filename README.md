@@ -1,2 +1,2 @@
 # JavaScript-Assignments
-I'll start my JS course and will try to hardly end most of it in less than 1 month, cuz some silly reasons, let's assume I need to work
+I've started my JS course, There's a huge volume of material to cover!, and for some silly reasons I have to finish most of it in less than 1 month.
