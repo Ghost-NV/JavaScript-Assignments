@@ -1,0 +1,18 @@
+function specialMix(...data) {
+  let result = 0;
+  for (let i = 0; i < data.length; i++) {
+    if (typeof data[i] === "string" && !isNaN(parseInt(data[i]))) {
+      result += parseInt(data[i]);
+    }
+    if (typeof data[i] === "number") {
+      result += data[i];
+    }
+  }
+  return result === 0 ? "All Is Strings" : result;
+  // Your Code Here
+}
+
+console.log(specialMix(10, 20, 30)); // 60
+console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
