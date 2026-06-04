@@ -25,6 +25,9 @@ console.log(theName.trim()); // delete spaces and other characters
 console.log(theName.trimStart()); // delete spaces and other characters from start
 console.log(theName.trimEnd()); // delete spaces and other characters from end
 
+// concat()
+console.log(theName.concat("++AAA++", theName, "-A-"));
+
 // padStart() , padEnd()... Add one character with costumized size (in the end or the first)
 console.log(
   theName.padStart(20, theName[2]).padEnd(37, theName[theName.length - 3]),
