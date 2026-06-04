@@ -9,7 +9,8 @@ console.log(a.lastIndexOf("o")); // 15
 
 // includs() , default end is 0
 console.log(a.includes("Web")); // true
-console.log(a.includes("Web", 7)); // false
+console.log(a.includes("Web", 7)); // true
+console.log(a.includes("Web", 8)); // false
 console.log("====");
 
 // startsWith() , default end is 0
