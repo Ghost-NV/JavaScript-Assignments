@@ -58,3 +58,27 @@ sayHi(); // "Hi"
 function sayHi() {
   console.log("Hi");
 }
+
+// ### functions types
+
+function sum() {
+  console.log("This's function declared");
+}
+
+(function () {
+  console.log("This's function IIF");
+})();
+
+sunny = () => {
+  console.log("This's function Arrow");
+};
+
+// Anonymous Function
+
+let i = function () {
+  console.log("This's Anonymous Function");
+};
+
+const sunn = () => {
+  console.log("This's Anonymous Arrow Function");
+};
