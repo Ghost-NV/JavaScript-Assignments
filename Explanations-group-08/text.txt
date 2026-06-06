@@ -1,0 +1,8 @@
+## hoisting ##
+
+function is : hoisting type 1
+  - can be removed to top and could be initialized 
+var is : hoisting type 2
+  - can be removed to top and could be initialized (defalut value is "undefined")
+"let" , "const" , "class" are : hoisting type 3
+  - can't be removed to top (returns an error)
