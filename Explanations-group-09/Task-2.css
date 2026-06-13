@@ -1,0 +1,31 @@
+body {
+  background-color: #111;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.preview-box {
+  margin: auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  border: 2px dashed #555;
+  border-radius: 10px;
+
+  font-family: "Open Sans", sans-serif;
+  color: #ff3333;
+  font-size: 16px;
+}
