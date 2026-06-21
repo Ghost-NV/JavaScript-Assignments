@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Popup | Website Component</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-section">
+        <h1>Custom Popup Component</h1>
+        <p>Fully customizable modal for your website</p>
+        <button class="demo-btn" id="openPopupBtn">Launch Popup</button>
+      </div>
+
+      <!-- Configuration Panel -->
+      <div class="config-card">
+        <h3>Popup Configuration</h3>
+        <div class="config-grid">
+          <div class="config-field">
+            <label>Title</label>
+            <input type="text" id="popupTitle" value="Limited Time Offer" />
+          </div>
+          <div class="config-field">
+            <label>Message</label>
+            <textarea id="popupMessage" rows="2">
+Subscribe to our newsletter and get exclusive access to deals, updates, and insider information.</textarea
+            >
+          </div>
+          <div class="config-field">
+            <label>Primary Button Text</label>
+            <input type="text" id="confirmText" value="Subscribe Now" />
+          </div>
+          <div class="config-field">
+            <label>Secondary Button Text</label>
+            <input type="text" id="cancelText" value="Dismiss" />
+          </div>
+          <div class="config-field">
+            <label>Accent Color</label>
+            <input type="color" id="accentColor" value="#2563eb" />
+          </div>
+          <div class="config-field">
+            <label>Popup Width</label>
+            <select id="popupWidth">
+              <option value="400px">Small (400px)</option>
+              <option value="480px" selected>Medium (480px)</option>
+              <option value="560px">Large (560px)</option>
+              <option value="640px">Extra Large (640px)</option>
+            </select>
+          </div>
+          <div class="config-field">
+            <label>Backdrop Blur</label>
+            <input
+              type="range"
+              id="blurAmount"
+              min="0"
+              max="10"
+              step="0.5"
+              value="4"
+            />
+            <span id="blurValue">4px</span>
+          </div>
+          <div class="config-field">
+            <label>Animation Type</label>
+            <select id="animationType">
+              <option value="fade">Fade In</option>
+              <option value="slide" selected>Slide Up</option>
+              <option value="scale">Scale In</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal Structure -->
+    <div id="popupOverlay" class="popup-overlay">
+      <div class="popup-container">
+        <div class="popup-header">
+          <h2 id="popupTitleDisplay">Limited Time Offer</h2>
+          <button class="close-btn" id="closePopupBtn">&times;</button>
+        </div>
+        <div class="popup-body">
+          <p id="popupMessageDisplay">
+            Subscribe to our newsletter and get exclusive access to deals,
+            updates, and insider information.
+          </p>
+        </div>
+        <div class="popup-footer">
+          <button class="btn-secondary" id="cancelPopupBtn">Dismiss</button>
+          <button class="btn-primary" id="confirmPopupBtn">
+            Subscribe Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

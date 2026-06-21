@@ -1,0 +1,39 @@
+#Div {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 80px;
+  width: 200px;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  /* height: 5000px;
+  width: 5000px; */
+}
+
+button {
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+}
+
+a,
+p {
+  user-select: none;
+}
+
+#UP {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
