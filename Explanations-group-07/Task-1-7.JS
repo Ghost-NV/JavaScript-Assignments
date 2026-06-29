@@ -18,3 +18,5 @@ function calculateTotalPayout(city, distance, weight) {
 
 calculateTotalPayout.apply(driver, deliveryData);
 // apply() works as call() but using array instead of single parameters
+
+// Object.values & Object.entries & Object.keys
